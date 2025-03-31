@@ -10,7 +10,7 @@ type HeaderItemProps = {
 };
 
 export const Header = ({ children }: HeaderProps) => {
-  return <div className="text-white w-full border-b border-white/20 sticky top-0 text-sm">{children}</div>;
+  return <div className="text-white w-full border-b border-white/20 text-sm">{children}</div>;
 };
 
 const Item = ({ icon, children }: HeaderItemProps) => {

@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 
 import "./App.css";
+import { Fahrzeugangebote } from "./pages";
 import PageLayout from "@/layouts/PageLayout";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Routes>
         <Route element={<PageLayout />}>
           <Route path="/" element={<div>Home</div>} />
-          <Route path="/fahrzeugangebote" element={<div>fahrzeugangebote</div>} />
+          <Route path="/fahrzeugangebote" element={<Fahrzeugangebote />} />
           <Route path="/finanzierung" element={<div>finanzierung</div>} />
           <Route path="/fahrzeugankauf" element={<div>fahrzeugankauf</div>} />
           <Route path="/galerie" element={<div>galerie</div>} />

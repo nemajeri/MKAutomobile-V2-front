@@ -11,7 +11,7 @@ export const ContactDetails = ({ headline, children }: ContactDetailsProps) => {
       <h4 className="relative uppercase text-lg after:w-5 after:h-0.5 after:content after:content-[''] after:block after:bg-red-500 after:mt-2 mb-5">
         {headline}
       </h4>
-      <p>{children}</p>
+      <div>{children}</div>
     </div>
   );
 };
