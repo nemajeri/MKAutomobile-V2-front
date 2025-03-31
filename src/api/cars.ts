@@ -41,25 +41,9 @@ export const useCars = () => {
     error: carsError,
   } = useQuery({ queryKey: ["cars"], queryFn: getCars, staleTime: 1000 * 60 * 5 });
 
-  const maxCarPrice = cars?.data?.reduce((acc: number, car: Car) => {
-    if (car.price > acc) {
-      return car.price;
-    }
-    return acc;
-  }, 0);
-
-  const minCarPrice = cars?.data?.reduce((acc: number, car: Car) => {
-    if (car.price < acc) {
-      return car.price;
-    }
-    return acc;
-  }, 0);
-
   return {
     cars,
     isLoadingCars,
     carsError,
-    minCarPrice,
-    maxCarPrice,
   };
 };

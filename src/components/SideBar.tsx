@@ -1,3 +1,14 @@
+import Select from "react-select";
+
 export const SideBar = () => {
-  return <></>;
+  return (
+    <div>
+      <Select options={[]} />
+      <Select options={[]} />
+      <Select options={[]} />
+      <Select options={[]} />
+      <Select options={[]} />
+      <Select options={[]} />
+    </div>
+  );
 };
